@@ -1,6 +1,6 @@
 /* Default Tag Styles */
 body {
-    background-image: url('/assets/images/background.png');
+    background-image: url('../../assets/images/background.png');
     background-repeat: repeat;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
