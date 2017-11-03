@@ -12,9 +12,11 @@
 
 <body>
     <!-- Header & Navigation -->
-    <div class="header-wrapper">
-        <header class="header">
-            <h1 id="logo_h1">Anthony Kehn</h1>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Anthony Kehn</h1>
+            </div>
             <nav>
                 <ul>
                     <li>
@@ -28,43 +30,48 @@
                     </li>
                 </ul>
             </nav>
-        </header>
-    </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
 
-    <div id="main-content">
-
-        <section id="section-content">
-            <h1>Contact Me</h1>
-            <hr>
-            <!--Begin Form -->
-            <form action="mailto:anthony@kehn.net" method="post" enctype="text/plain">
-                Name:<br />
-                <input type="text" name="name" onfocus="this.value='';" value="John Smith">
-                <br />
-                Email:<br />
-                <input type="text" name="email" onfocus="this.value='';" value="example@email.com">
-                <br />
-                Message:<br />
-                <textarea></textarea>
-                <br />                    
-                <input type="submit" value="Submit">
-            </form>
-            <!--End Form -->
-        </section>
-
-        <!-- Sidebar Section On Right -->
-        <aside id="sidebar">
-                <h2>Connect with Me</h2>
+            <section id="contact">
+                <h2>Contact Me</h2>
                 <hr>
-                <a href="https://github.com/akehn" target="_blank"><img src="assets/images/github_64.png" alt="Git Hub"></a>
-                <a href="https://www.linkedin.com/in/anthonykehn" target="_blank"><img src="assets/images/lnkdn_64.png" alt="Linkedin"></a>
-                <a href="https://stackexchange.com/users/11487762/akehn" target="_blank"><img src="assets/images/stackoverflow_64.png" alt="Stack Overflow"></a>
+                <!--Begin Form -->
+                <form action="mailto:anthony@kehn.net" method="post" enctype="text/plain">
+                    Name:
+                    <br />
+                    <input type="text" name="name" onfocus="this.value='';" value="John Smith">
+                    <br /> Email:
+                    <br />
+                    <input type="text" name="email" onfocus="this.value='';" value="example@email.com">
+                    <br /> Message:
+                    <br />
+                    <textarea></textarea>
+                    <br />
+                    <input type="submit" value="Submit">
+                </form>
+                <!--End Form -->
+            </section>
+
+            <!-- Sidebar Section On Right -->
+            <aside id="sidebar">
+                <h3>Connect with Me</h3>
+                <hr>
+                <a href="https://github.com/akehn" target="_blank">
+                    <img src="assets/images/github_64.png" alt="Git Hub"></a>
+                <a href="https://www.linkedin.com/in/anthonykehn" target="_blank">
+                    <img src="assets/images/lnkdn_64.png" alt="Linkedin"></a>
+                <a href="https://stackexchange.com/users/11487762/akehn" target="_blank">
+                    <img src="assets/images/stackoverflow_64.png" alt="Stack Overflow"></a>
             </aside>
-    </div>
-    
+        </div>
+    </main>
     <!-- Footer Section -->
     <footer class="footer">
-        Copyright &copy 2017 <a href="http://www.kehn.net" target="_blank">Anthony Kehn</a>
+        Copyright &copy 2017
+        <a href="http://www.kehn.net" target="_blank">Anthony Kehn</a>
     </footer>
 </body>
 

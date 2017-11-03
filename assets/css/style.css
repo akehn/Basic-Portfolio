@@ -1,4 +1,13 @@
 /* Default Tag Styles */
+* {
+	box-sizing: border-box;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 body {
     background-image: url('../../assets/images/background.png');
     background-repeat: repeat;
@@ -6,20 +15,22 @@ body {
     color: #777777;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', Times, Times, serif;
     color: #4aaaa5;
-    font-weight: bold;
-    font-size: 30px;
-    padding-bottom: 15px;
+    font-size: 1.8em;
 }
 
 h2 { 
     font-family: 'Georgia', Times, Times, serif;
     color: #4aaaa5;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 1.8em;
     padding-bottom: 15px;
+}
+
+h3 {
+	font-size: 1.2em;
 }
 
 p {
@@ -34,56 +45,48 @@ hr {
 }
 
 /* Header & Navigation */
-.header-wrapper{
-    width: 100%;
+header {
     background-color: white;
-    border-bottom: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: #cccccc;
-    height: 90px;
-}
-.header {
-    max-width: 960px;
-    margin: auto;
-    overflow: auto;
+    border-bottom: 2px solid #cccccc;
+    overflow: hidden;
 }
 
-.header ul {
+
+.logo {
+    background-color: #4aaaa5;
+    padding: 23px;
+    float: left;
+}
+
+
+.logo h1 {
+    color: #fff;
+}
+
+nav ul {
     list-style-type: none;
     float: right;
-    padding-top: 36px;
-    padding-right: 10px;
-    font-size: 18px;
-    color: #999999;
-    word-spacing: 10px;        
+    padding: 0;
+    margin-top: 12px;
 }
 
-.header ul li {
-    display: inline;
-}
-
-/* https://www.jackreichert.com/2011/07/how-to-add-a-divider-between-menu-items-in-css-using-only-one-selector/ */
-.header li+li { 
-    border-left: 1px solid #dbdbdb;
-    padding-left: 20px;
-}
-
-#logo_h1 {
-    font-family: 'Georgia', Times, Times, serif;
-    color: white;
-    font-weight: bold;
-    font-size: 25px;
-    color: white;
-    background-color: #4aaaa5;
-    padding: 33px 25px 33px 20px;
-    max-width: 240px;
+nav li {
     float: left;
-    letter-spacing: 2px;
 }
 
-li a {
+nav li a {
     color: #999999;
     text-decoration: none;
+    margin-top: 20px;
+    padding: 0 10px;
+    text-align: center;
+    line-height: 12px;
+    border-right: 1px solid #dbdbdb;
+    display: block;
+}
+
+nav li:last-child a {
+	border-right: 0;
 }
 
 li a:hover {
@@ -94,40 +97,37 @@ li a:active {
     color: #4aaaa5;
 }
 
-.nav {
-    width: 22.91%;
-}
-
 /* Main Content - Section - Aside Areas */
-#main-content {
-    max-width: 960px;
-    margin: auto;
+
+#about, #portfolio, #contact, #sidebar {
+    background-color: white;
+    padding: 20px;
     margin-top: 40px;
-    margin-bottom: 50px;
-    overflow: auto;
+    margin-bottom: 120px;
+    border: 2px solid #cccccc;  
 }
 
-#section-content {
+#about, #portfolio, #contact {
+    width: 650px;
     float: left;
-    background-color: white;
-    width: 62.5%;
-    padding: 35px 25px 25px 25px;
-    margin-right: 38px;
-    margin-bottom: 40px; 
-    border: 1px;
-    border-style: solid;
-    border-color: #cccccc;    
+}
+
+#about h2, #portfolio h2, #contact h2 {
+    padding: 10px;
 }
 
 #sidebar {
-    float: left;
-    background-color: white;
-    width: 22.7%;
-    padding: 25px;
-    margin-bottom: 40px;
-    border: 1px;
-    border-style: solid;
-    border-color: #cccccc; 
+    width: 270px;
+    float: right;
+}
+
+.mypic {
+	margin: 20px 20px 0px 0px;
+	float: left;
+}
+
+.mypic img {
+    max-width: 175px;
 }
 
 #sidebar img {
@@ -137,14 +137,6 @@ li a:active {
 #sidebar a+a {
     padding-left: 4px;
 }
-
-#mypic {
-    float: left;
-    padding: 12px 25px 0px 0px;
-    width: 100%;
-    max-width: 250px;
-}
-
 
 /* Sticky Footer */
 .footer {
@@ -164,9 +156,17 @@ li a:active {
 }
 
 
+/* Portfolio Page */
+
 /* Portfolio Page - Create two equal columns that floats next to each other
 https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp 
 https://www.w3schools.com/howto/howto_css_image_text.asp */
+
+.row {
+    max-width: 650px;
+	margin: 0 auto;
+	padding: 0px 20px 0px 20px;
+}
 
 .column-1 {
     float: left;
@@ -178,7 +178,7 @@ https://www.w3schools.com/howto/howto_css_image_text.asp */
 .column-2 {
     float: left;
     width: 48.333%;
-    padding: 10px 0px 0px 0px;
+    padding: 10px 20px 0px 0px;
 }
 
 
